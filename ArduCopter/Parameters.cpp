@@ -733,6 +733,13 @@ const AP_Param::Info Copter::var_info[] = {
  */
 const AP_Param::GroupInfo ParametersG2::var_info[] = {
 
+    // @Param: MY_NEW_PARAMETER
+    // @DisplayName: My New Parameter
+    // @Description: A description of my new parameter goes here
+    // @Range: 0 1
+    // @User: Advanced
+    GSCALAR(do_rtl_no_gps_pa, "MY_NEW_PARAMETER", 1),
+
     // @Param: WP_NAVALT_MIN
     // @DisplayName: Minimum navigation altitude
     // @Description: This is the altitude in meters above which for navigation can begin. This applies in auto takeoff and auto landing.
