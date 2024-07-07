@@ -397,6 +397,7 @@ public:
     AP_Float        throttle_filt;
     AP_Int16        throttle_behavior;
     AP_Float        pilot_takeoff_alt;
+    AP_Int8         do_rtl_no_gps_pa; //land or atlhohld in rtl without gps PA
 
 #if MODE_RTL_ENABLED == ENABLED
     AP_Int32        rtl_altitude;
@@ -685,7 +686,6 @@ public:
     AP_Float pldp_range_finder_maximum_m;
     AP_Float pldp_delay_s;
     AP_Float pldp_descent_speed_ms;
-    AP_Int8 do_rtl_no_gps_pa; //land or atlhohld in rtl without gps PA
 };
 
 extern const AP_Param::Info        var_info[];
