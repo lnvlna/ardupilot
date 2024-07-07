@@ -322,8 +322,8 @@ void Copter::failsafe_deadreckon_check()
     const char* dr_prefix_str = "Dead Reckoning";
 
     // get EKF filter status
-    bool ekf_dead_reckoning = inertial_nav.get_filter_status().flags.dead_reckoning;
-
+    //bool ekf_dead_reckoning = inertial_nav.get_filter_status().flags.dead_reckoning;
+    bool ekf_dead_reckoning = 1;
     // alert user to start or stop of dead reckoning
     const uint32_t now_ms = AP_HAL::millis();
     if (dead_reckoning.active != ekf_dead_reckoning) {
