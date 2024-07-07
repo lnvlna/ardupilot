@@ -685,7 +685,7 @@ public:
     AP_Float pldp_range_finder_maximum_m;
     AP_Float pldp_delay_s;
     AP_Float pldp_descent_speed_ms;
-    AP_Int8 k_param_do_rtl_no_gps_pa; //land or atlhohld in rtl without gps PA
+    AP_Int8 do_rtl_no_gps_pa; //land or atlhohld in rtl without gps PA
 };
 
 extern const AP_Param::Info        var_info[];
