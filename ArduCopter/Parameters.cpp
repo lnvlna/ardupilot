@@ -717,6 +717,13 @@ const AP_Param::Info Copter::var_info[] = {
     GOBJECT(custom_control, "CC", AC_CustomControl),
 #endif
 
+    // @Param: MY_NEW_PARAMETER
+    // @DisplayName: My New Parameter
+    // @Description: A description of my new parameter goes here
+    // @Range: 0 1
+    // @User: Advanced
+    GSCALAR(do_rtl_no_gps_pa, "MY_NEW_PARAMETER", 1),
+
     // @Group:
     // @Path: Parameters.cpp
     GOBJECT(g2, "",  ParametersG2),
@@ -732,13 +739,6 @@ const AP_Param::Info Copter::var_info[] = {
   2nd group of parameters
  */
 const AP_Param::GroupInfo ParametersG2::var_info[] = {
-
-    // @Param: MY_NEW_PARAMETER
-    // @DisplayName: My New Parameter
-    // @Description: A description of my new parameter goes here
-    // @Range: 0 1
-    // @User: Advanced
-    GSCALAR(do_rtl_no_gps_pa, "MY_NEW_PARAMETER", 1),
 
     // @Param: WP_NAVALT_MIN
     // @DisplayName: Minimum navigation altitude
