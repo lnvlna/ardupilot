@@ -382,6 +382,7 @@ void Copter::set_mode_RTL_or_land_with_pause(ModeReason reason)
 #if MODE_RTL_ENABLED
     // attempt to switch to RTL, if this fails then switch to Land
     if (set_mode(Mode::Number::RTL, reason)) {
+        gcs().send_text(MAV_SEVERITY_CRITICAL, "TO POCHEMU RTL");
         AP_Notify::events.failsafe_mode_change = 1;
         return;
     }
