@@ -722,7 +722,7 @@ const AP_Param::Info Copter::var_info[] = {
     // @Description: A description of my new parameter goes here
     // @Range: 0 1
     // @User: Advanced
-    GSCALAR(do_rtl_no_gps_pa, "MY_NEW_PARAMETER", 1),
+    //GSCALAR(do_rtl_no_gps_pa, "MY_NEW_PARAMETER", 1),
 
     // @Group:
     // @Path: Parameters.cpp
