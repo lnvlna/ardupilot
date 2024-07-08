@@ -388,7 +388,7 @@ void Copter::set_mode_RTL_or_land_with_pause(ModeReason reason)
 #endif
     // set mode to land will trigger mode change notification to pilot
     //set_mode_land_with_pause(reason);
-    gcs().send_text(MAV_SEVERITY_CRITICAL, "ALTHOLD Нема пульту та супутників");
+    gcs().send_text(MAV_SEVERITY_CRITICAL, "ALTHOLD no RC no GPS");
     set_mode(Mode::Number::ALT_HOLD, ModeReason::EKF_FAILSAFE);
 }
 
