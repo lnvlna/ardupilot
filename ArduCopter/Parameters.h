@@ -381,7 +381,7 @@ public:
         k_param_vehicle = 257, // vehicle common block of parameters
         k_param_throw_altitude_min,
         k_param_throw_altitude_max,
-        k_param_do_rtl_no_gps_pa, //260 land or atlhohld in rtl without gps PA
+        //k_param_do_rtl_no_gps_pa, //260 land or atlhohld in rtl without gps PA
         // the k_param_* space is 9-bits in size
         // 511: reserved
     };
@@ -397,7 +397,7 @@ public:
     AP_Float        throttle_filt;
     AP_Int16        throttle_behavior;
     AP_Float        pilot_takeoff_alt;
-    AP_Int8         do_rtl_no_gps_pa; //land or atlhohld in rtl without gps PA
+    //AP_Int8         do_rtl_no_gps_pa; //land or atlhohld in rtl without gps PA
 
 #if MODE_RTL_ENABLED == ENABLED
     AP_Int32        rtl_altitude;
