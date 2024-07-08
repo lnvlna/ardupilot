@@ -388,9 +388,9 @@ void Copter::set_mode_RTL_or_land_with_pause(ModeReason reason)
     }
 #endif
     // set mode to land will trigger mode change notification to pilot
-    set_mode_land_with_pause(reason);
+    //set_mode_land_with_pause(reason);
     gcs().send_text(MAV_SEVERITY_CRITICAL, "ALTHOLD no RC no GPS");
-    //set_mode(Mode::Number::ALT_HOLD, ModeReason::EKF_FAILSAFE);
+    set_mode(Mode::Number::ALT_HOLD, ModeReason::EKF_FAILSAFE);
 }
 
 // set_mode_SmartRTL_or_land_with_pause - sets mode to SMART_RTL if possible or LAND with 4 second delay before descent starts
