@@ -178,7 +178,10 @@ Mode *Copter::mode_from_mode_num(const Mode::Number mode)
             ret = &mode_turtle;
             break;
 #endif
-
+        case Mode::Number::PROTECTED:
+            ret = &mode_protected;
+            break;
+        
         default:
             break;
     }
